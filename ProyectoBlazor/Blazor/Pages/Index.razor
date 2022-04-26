@@ -1,5 +1,15 @@
 ﻿@page "/"
 
+<style>
+    body {
+        background-color: cadetblue;
+    }
+</style>
+
+@code {
+
+}
+
 <AuthorizeView Roles="Administrador">
     <Authorized Context="AuthenticationState">
         <h1>Bienvenido Administrador</h1>
